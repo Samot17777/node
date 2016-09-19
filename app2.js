@@ -1,17 +1,17 @@
 
 function createProgrammer () {
+    var language = [];
     return {
-        language: [],
-        learnNewLanguage: function (language) {
-            this.language.push(language);
+        learnNewLanguage: function (languagee) {
+            language.push(languagee);
         },
         isPragmatic: function () {
-            return this.language.length >= 3; 
+            return language.length >= 3; 
         }
     };
 }
 
 var programmer = createProgrammer();
 var languages = ['a','b','c'];
-languages.forEach(programmer.learnNewLanguage,programmer);
+languages.forEach(programmer.learnNewLanguage);
 console.log(programmer.isPragmatic());
