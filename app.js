@@ -12,7 +12,7 @@ Programmer.prototype.isPragmatic = function () {
 
 var programmer  = new Programmer() ; 
 var languages = ['jQUeyr','angular','node'];
-languages.forEach(function (el) {
-    programmer.learnNewLanguage(el);
-});
+
+languages.forEach(programmer.learnNewLanguage,programmer);
+
 console.log(programmer.language);
