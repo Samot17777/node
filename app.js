@@ -11,9 +11,8 @@ Programmer.prototype.isPragmatic = function () {
 };
 
 var programmer  = new Programmer() ; 
-programmer.learnNewLanguage('Clojure');
-programmer.learnNewLanguage('Clojure');
-programmer.learnNewLanguage('Clojure');
-programmer.learnNewLanguage('Clojure');
-console.log(programmer.isPragmatic());
-
+var languages = ['jQUeyr','angular','node'];
+languages.forEach(function (el) {
+    programmer.learnNewLanguage(el);
+});
+console.log(programmer.language);
